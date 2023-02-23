@@ -1,0 +1,22 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin takeAllAvailableSpace {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin mq($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin smallestDevice() {
+    @media only screen and (max-width: 600px) {
+        @content;
+    }
+}

@@ -1,0 +1,23 @@
+button {
+  all: unset;
+  display: inline-block;
+}
+
+button.change-mode {
+  background-color: $button-bg-color;
+  color: $button-color;
+  padding: 10px;
+  border-radius: $border-radius;
+}
+
+button:hover,
+button:focus {
+  background-color: $button-focus-color;
+  box-shadow: $button-hover-shadow;
+  filter: drop-shadow(0 0 4px $section-bg-color)
+    drop-shadow(0 0 4px $section-bg-color);
+}
+
+button:active, button:focus {
+  background-color: $button-focus-color;
+}

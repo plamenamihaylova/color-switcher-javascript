@@ -1,0 +1,35 @@
+.nav {
+  background-color: $nav-bg-color;
+  color: $nav-color;
+  box-shadow: $shadow;
+  font-weight: bold;
+  overflow: hidden;
+
+  @include smallestDevice() {
+    height: 15vh;
+  }
+
+  @include mq(600px) {
+    height: 15vh;
+  }
+
+  @include mq(768px) {
+    height: 10vh;
+  }
+
+  ul {
+    list-style-type: none;
+    @include flexCenter;
+    @include takeAllAvailableSpace;
+
+    li {
+      @include takeAllAvailableSpace;
+      border-left: 0.2px solid $section-color;
+
+      .nav__button {
+        @include takeAllAvailableSpace;
+        text-align: center;
+      }
+    }
+  }
+}

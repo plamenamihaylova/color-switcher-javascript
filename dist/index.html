@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color switcher</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <script src="js/main.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <nav id="nav" class="nav">
+      <ul>
+        <li>
+          <button id="color_flipper" class="nav__button" type="submit">
+            Color Flipper
+          </button>
+        </li>
+        <li>
+          <button id="simple_hex" class="nav__button" type="submit">
+            Simple Hex
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <main id="main">
+      <section id="current-color" class="current-color">
+        Current background color:
+        <span class="current-color__value">some color</span>
+      </section>
+      <section id="next-color" class="next-color">
+        Next background color:
+        <span class="next-color__value">some color</span>
+      </section>
+      <button id="change-mode" class="change-mode" type="submit">Change</button>
+    </main>
+  </body>
+</html>

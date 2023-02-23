@@ -1,0 +1,16 @@
+main {
+  @include flexCenter;
+  flex-flow: column wrap;
+
+  @include smallestDevice() {
+    height: 85vh;
+  }
+
+  @include mq(600px) {
+    height: 85vh;
+  }
+
+  @include mq(768px) {
+    height: 90vh;
+  }
+}
